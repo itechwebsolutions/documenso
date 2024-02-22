@@ -1,4 +1,4 @@
->We are nominated for a Product Hunt Gold Kitty 😺✨ and appreciate any support: https://documen.so/kitty
+>We are nominateds for a Product Hunt Gold Kitty 😺✨ and appreciate any support: https://documen.so/kitty
 
 <img src="https://github.com/documenso/documenso/assets/13398220/a643571f-0239-46a6-a73e-6bef38d1228b" alt="Documenso Logo">
 
