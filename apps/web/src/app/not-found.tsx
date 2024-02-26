@@ -12,7 +12,7 @@ export default async function NotFound() {
     <NotFoundPartial>
       {session && (
         <Button className="w-32" asChild>
-          <Link href="/documents">Documents</Link>
+          <Link href="/documents">מסמכים</Link>
         </Button>
       )}
 

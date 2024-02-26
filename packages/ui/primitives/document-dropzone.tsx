@@ -78,7 +78,7 @@ const DocumentDropzoneCardCenterVariants: Variants = {
 
 const DocumentDescription = {
   document: {
-    headline: 'Add a document',
+    headline: 'העלאת מסמך חדש',
   },
   template: {
     headline: 'Upload Template Document',

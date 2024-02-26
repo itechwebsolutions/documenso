@@ -15,17 +15,17 @@ type FriendlyStatus = {
 
 export const FRIENDLY_STATUS_MAP: Record<ExtendedDocumentStatus, FriendlyStatus> = {
   PENDING: {
-    label: 'Pending',
+    label: 'בהמתנה לחתימה',
     icon: Clock,
     color: 'text-blue-600 dark:text-blue-300',
   },
   COMPLETED: {
-    label: 'Completed',
+    label: 'נחתמו',
     icon: CheckCircle2,
     color: 'text-green-500 dark:text-green-300',
   },
   DRAFT: {
-    label: 'Draft',
+    label: 'טיוטות',
     icon: File,
     color: 'text-yellow-500 dark:text-yellow-200',
   },
@@ -35,7 +35,7 @@ export const FRIENDLY_STATUS_MAP: Record<ExtendedDocumentStatus, FriendlyStatus>
     color: 'text-muted-foreground',
   },
   ALL: {
-    label: 'All',
+    label: 'כל המסמכים',
     color: 'text-muted-foreground',
   },
 };

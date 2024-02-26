@@ -68,12 +68,12 @@ export const EditDocumentForm = ({
 
   const documentFlow: Record<EditDocumentStep, DocumentFlowStep> = {
     title: {
-      title: 'Add Title',
-      description: 'Add the title to the document.',
+      title: 'הוספת כותרת',
+      description: 'הוסף כותרת למסמך.',
       stepIndex: 1,
     },
     signers: {
-      title: 'Add Signers',
+      title: 'הוספת חותמים',
       description: 'Add the people who will sign the document.',
       stepIndex: 2,
     },
