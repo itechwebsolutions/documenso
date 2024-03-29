@@ -8,7 +8,7 @@ export type DocumentsPageProps = {
 };
 
 export const metadata: Metadata = {
-  title: 'Documents',
+  title: 'מסמכים',
 };
 
 export default function DocumentsPage({ searchParams = {} }: DocumentsPageProps) {

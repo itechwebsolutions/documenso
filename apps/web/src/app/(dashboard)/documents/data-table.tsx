@@ -60,33 +60,33 @@ export const DocumentsDataTable = ({
       <DataTable
         columns={[
           {
-            header: 'Created',
+            header: 'נוצר',
             accessorKey: 'createdAt',
             cell: ({ row }) => <LocaleDate date={row.original.createdAt} />,
           },
           {
-            header: 'Title',
+            header: 'כותרת',
             cell: ({ row }) => <DataTableTitle row={row.original} teamUrl={team?.url} />,
           },
           {
             id: 'sender',
-            header: 'Sender',
+            header: 'שולח',
             cell: ({ row }) => row.original.User.name ?? row.original.User.email,
           },
           {
-            header: 'Recipient',
+            header: 'נמענים',
             accessorKey: 'recipient',
             cell: ({ row }) => {
               return <StackAvatarsWithTooltip recipients={row.original.Recipient} />;
             },
           },
           {
-            header: 'Status',
+            header: 'סטטוס',
             accessorKey: 'status',
             cell: ({ row }) => <DocumentStatus status={row.getValue('status')} />,
           },
           {
-            header: 'Actions',
+            header: 'פעולות',
             cell: ({ row }) =>
               (!row.original.deletedAt ||
                 row.original.status === ExtendedDocumentStatus.COMPLETED) && (

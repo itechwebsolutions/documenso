@@ -30,7 +30,7 @@ export const FRIENDLY_STATUS_MAP: Record<ExtendedDocumentStatus, FriendlyStatus>
     color: 'text-yellow-500 dark:text-yellow-200',
   },
   INBOX: {
-    label: 'Inbox',
+    label: 'דואר נכנס',
     icon: SignatureIcon,
     color: 'text-muted-foreground',
   },

@@ -17,11 +17,11 @@ import { CommandMenu } from '../common/command-menu';
 const navigationLinks = [
   {
     href: '/documents',
-    label: 'Documents',
+    label: 'מסמכים',
   },
   {
     href: '/templates',
-    label: 'Templates',
+    label: 'תבניות',
   },
 ];
 
@@ -79,7 +79,7 @@ export const DesktopNav = ({ className, ...props }: DesktopNavProps) => {
       >
         <div className="flex items-center">
           <Search className="mr-2 h-5 w-5" />
-          Search
+          חיפוש
         </div>
 
         <div>

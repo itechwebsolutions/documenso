@@ -112,7 +112,7 @@ export const ResendDocumentActionItem = ({
       <DialogTrigger asChild>
         <DropdownMenuItem disabled={isDisabled} onSelect={(e) => e.preventDefault()}>
           <History className="mr-2 h-4 w-4" />
-          Resend
+          שליחה מחדש
         </DropdownMenuItem>
       </DialogTrigger>
 

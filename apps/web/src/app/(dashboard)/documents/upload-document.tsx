@@ -72,8 +72,8 @@ export const UploadDocument = ({ className, team }: UploadDocumentProps) => {
       });
 
       toast({
-        title: 'Document uploaded',
-        description: 'Your document has been uploaded successfully.',
+        title: 'המסמך הועלה',
+        description: 'המסמך עלה בהצלחה.',
         duration: 5000,
       });
 

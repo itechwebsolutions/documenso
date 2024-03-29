@@ -183,7 +183,7 @@ export const DocumentDropzone = ({
           </p>
 
           <p className="text-muted-foreground/80 mt-1 text-sm">
-            {disabled ? disabledMessage : 'Drag & drop your PDF here.'}
+            {disabled ? disabledMessage : 'גרור ושחרר את המסמך שלך כאן.'}
           </p>
         </CardContent>
       </Card>

@@ -61,11 +61,11 @@ export const MenuSwitcher = ({ user, teams: initialTeamsData }: MenuSwitcherProp
 
   const formatSecondaryAvatarText = (team?: typeof selectedTeam) => {
     if (!team) {
-      return 'Personal Account';
+      return 'חשבון משתמש';
     }
 
     if (team.ownerUserId === user.id) {
-      return 'Owner';
+      return 'מנהל';
     }
 
     return TEAM_MEMBER_ROLE_MAP[team.currentTeamMember.role];
@@ -185,28 +185,17 @@ export const MenuSwitcher = ({ user, teams: initialTeamsData }: MenuSwitcherProp
               ))}
             </div>
           </>
-        ) : (
-          <DropdownMenuItem className="text-muted-foreground px-4 py-2" asChild>
-            <Link
-              href="/settings/teams?action=add-team"
-              className="flex items-center justify-between"
-            >
-              Create team
-              <Plus className="ml-2 h-4 w-4" />
-            </Link>
-          </DropdownMenuItem>
-        )}
+        ) : ''}
 
-        <DropdownMenuSeparator />
-
+ 
         {isUserAdmin && (
           <DropdownMenuItem className="text-muted-foreground px-4 py-2" asChild>
-            <Link href="/admin">Admin panel</Link>
+            <Link href="/admin">לוח ניהול</Link>
           </DropdownMenuItem>
         )}
 
         <DropdownMenuItem className="text-muted-foreground px-4 py-2" asChild>
-          <Link href="/settings/profile">User settings</Link>
+          <Link href="/settings/profile">הגדרות משתמש</Link>
         </DropdownMenuItem>
 
         {selectedTeam &&
@@ -224,7 +213,7 @@ export const MenuSwitcher = ({ user, teams: initialTeamsData }: MenuSwitcherProp
             })
           }
         >
-          Sign Out
+          התנתקות
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

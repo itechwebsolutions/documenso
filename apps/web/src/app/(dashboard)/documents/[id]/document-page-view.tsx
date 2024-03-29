@@ -97,7 +97,7 @@ export const DocumentPageView = async ({ params, team }: DocumentPageViewProps) 
     <div className="mx-auto -mt-4 w-full max-w-screen-xl px-4 md:px-8">
       <Link href="/documents" className="flex items-center text-[#7AC455] hover:opacity-80">
         <ChevronLeft className="mr-2 inline-block h-5 w-5" />
-        Documents
+        מסמכים
       </Link>
 
       <div className="flex flex-row justify-between">

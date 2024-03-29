@@ -96,7 +96,7 @@ export const DataTableActionButton = ({ row, team }: DataTableActionButtonProps)
         <Button className="w-32" asChild>
           <Link href={`${documentsPath}/${row.id}/edit`}>
             <Edit className="-ml-1 mr-2 h-4 w-4" />
-            Edit
+            עריכה
           </Link>
         </Button>
       ),
@@ -135,7 +135,7 @@ export const DataTableActionButton = ({ row, team }: DataTableActionButtonProps)
     .with({ isComplete: true }, () => (
       <Button className="w-32" onClick={onDownloadClick}>
         <Download className="-ml-1 mr-2 inline h-4 w-4" />
-        Download
+        הורדה
       </Button>
     ))
     .otherwise(() => <div></div>);

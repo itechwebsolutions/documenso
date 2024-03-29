@@ -45,12 +45,12 @@ export const DocumentsDataTable = ({ results }: DocumentsDataTableProps) => {
       <DataTable
         columns={[
           {
-            header: 'Created',
+            header: 'נוצר',
             accessorKey: 'createdAt',
             cell: ({ row }) => <LocaleDate date={row.original.createdAt} />,
           },
           {
-            header: 'Title',
+            header: 'כותרת',
             accessorKey: 'title',
             cell: ({ row }) => {
               return (
@@ -61,7 +61,7 @@ export const DocumentsDataTable = ({ results }: DocumentsDataTableProps) => {
             },
           },
           {
-            header: 'Owner',
+            header: 'בעלים',
             accessorKey: 'owner',
             cell: ({ row }) => {
               const avatarFallbackText = row.original.User.name
@@ -101,7 +101,7 @@ export const DocumentsDataTable = ({ results }: DocumentsDataTableProps) => {
             cell: ({ row }) => <LocaleDate date={row.original.updatedAt} />,
           },
           {
-            header: 'Status',
+            header: 'סטטוס',
             accessorKey: 'status',
             cell: ({ row }) => <DocumentStatus status={row.original.status} />,
           },

@@ -28,11 +28,11 @@ export const MobileNavigation = ({ isMenuOpen, onMenuOpenChange }: MobileNavigat
   const menuNavigationLinks = [
     {
       href: `${rootHref}/documents`,
-      text: 'Documents',
+      text: 'מסמכים',
     },
     {
       href: `${rootHref}/templates`,
-      text: 'Templates',
+      text: 'תבניות',
     },
     {
       href: '/settings/teams',
@@ -40,7 +40,7 @@ export const MobileNavigation = ({ isMenuOpen, onMenuOpenChange }: MobileNavigat
     },
     {
       href: '/settings/profile',
-      text: 'Settings',
+      text: 'הגדרות',
     },
   ];
 

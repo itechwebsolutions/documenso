@@ -116,7 +116,7 @@ export const UsersDataTable = ({
             },
           },
           {
-            header: 'Documents',
+            header: 'מסמכים',
             accessorKey: 'documents',
             cell: ({ row }) => {
               return <div>{row.original.Document.length}</div>;
