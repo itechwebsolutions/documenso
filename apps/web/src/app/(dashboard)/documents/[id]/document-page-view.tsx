@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { redirect } from 'next/navigation';
 
 import { ChevronLeft, Clock9, Users2 } from 'lucide-react';
@@ -97,7 +97,7 @@ export const DocumentPageView = async ({ params, team }: DocumentPageViewProps) 
     <div className="mx-auto -mt-4 w-full max-w-screen-xl px-4 md:px-8">
       <Link href="/documents" className="flex items-center text-[#7AC455] hover:opacity-80">
         <ChevronLeft className="mr-2 inline-block h-5 w-5" />
-        מסמכים
+        �������
       </Link>
 
       <div className="flex flex-row justify-between">
@@ -164,10 +164,7 @@ export const DocumentPageView = async ({ params, team }: DocumentPageViewProps) 
                     DocumentStatus.COMPLETED,
                     () => 'This document has been signed by all recipients',
                   )
-                  .with(
-                    DocumentStatus.DRAFT,
-                    () => 'This document is currently a draft and has not been sent',
-                  )
+                  .with(DocumentStatus.DRAFT, () => 'המסמך הזה הוא טיוטה, ועוד לא נשלח')
                   .with(DocumentStatus.PENDING, () => {
                     const pendingRecipients = recipients.filter(
                       (recipient) => recipient.signingStatus === 'NOT_SIGNED',

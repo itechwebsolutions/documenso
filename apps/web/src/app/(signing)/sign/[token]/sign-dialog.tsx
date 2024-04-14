@@ -49,15 +49,15 @@ export const SignDialog = ({
       <DialogContent>
         <div className="text-center">
           <div className="text-foreground text-xl font-semibold">
-            {role === RecipientRole.VIEWER && 'Mark Document as Viewed'}
-            {role === RecipientRole.SIGNER && 'Sign Document'}
+            {role === RecipientRole.VIEWER && 'צפיה במסמך'}
+            {role === RecipientRole.SIGNER && 'חתימה על המסמך'}
             {role === RecipientRole.APPROVER && 'Approve Document'}
           </div>
           <div className="text-muted-foreground mx-auto w-4/5 py-2 text-center">
             {role === RecipientRole.VIEWER &&
               `You are about to finish viewing "${truncatedTitle}". Are you sure?`}
             {role === RecipientRole.SIGNER &&
-              `You are about to finish signing "${truncatedTitle}". Are you sure?`}
+              `אתה הולך לחתום על "${truncatedTitle}". האם אתה בטוח?`}
             {role === RecipientRole.APPROVER &&
               `You are about to finish approving "${truncatedTitle}". Are you sure?`}
           </div>
@@ -73,7 +73,7 @@ export const SignDialog = ({
                 setShowDialog(false);
               }}
             >
-              Cancel
+              ביטול
             </Button>
 
             <Button
@@ -84,7 +84,7 @@ export const SignDialog = ({
               onClick={onSignatureComplete}
             >
               {role === RecipientRole.VIEWER && 'Mark as Viewed'}
-              {role === RecipientRole.SIGNER && 'Sign'}
+              {role === RecipientRole.SIGNER && 'חתום'}
               {role === RecipientRole.APPROVER && 'Approve'}
             </Button>
           </div>

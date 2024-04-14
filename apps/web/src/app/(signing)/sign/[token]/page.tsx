@@ -118,7 +118,7 @@ export default async function SigningPage({ params: { token } }: SigningPageProp
             {document.User.name} ({document.User.email}) has invited you to{' '}
             {recipient.role === RecipientRole.VIEWER && 'view'}
             {recipient.role === RecipientRole.SIGNER && 'sign'}
-            {recipient.role === RecipientRole.APPROVER && 'approve'} this document.
+            {recipient.role === RecipientRole.APPROVER && 'approve'} על מסמך זה.
           </p>
         </div>
 

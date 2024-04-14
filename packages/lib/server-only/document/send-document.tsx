@@ -121,7 +121,7 @@ export const sendDocument = async ({
             },
             subject: customEmail?.subject
               ? renderCustomEmailTemplate(customEmail.subject, customEmailTemplate)
-              : `Please ${actionVerb.toLowerCase()} this document`,
+              : `נא ${actionVerb.toLowerCase()} על מסמך זה`,
             html: render(template),
             text: render(template, { plainText: true }),
           });

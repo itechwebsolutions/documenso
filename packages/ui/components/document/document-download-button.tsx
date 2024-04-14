@@ -61,7 +61,7 @@ export const DocumentDownloadButton = ({
       {...props}
     >
       <Download className="mr-2 h-5 w-5" />
-      Download
+      להורדה
     </Button>
   );
 };

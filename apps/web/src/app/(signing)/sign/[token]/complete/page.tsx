@@ -77,7 +77,7 @@ export default async function CompletedSigningPage({
           .with({ status: DocumentStatus.COMPLETED }, () => (
             <div className="text-documenso-700 flex items-center text-center">
               <CheckCircle2 className="mr-2 h-5 w-5" />
-              <span className="text-sm">Everyone has signed</span>
+              <span className="text-sm">המסמך נחתם</span>
             </div>
           ))
           .with({ deletedAt: null }, () => (
@@ -104,12 +104,12 @@ export default async function CompletedSigningPage({
         {match({ status: document.status, deletedAt: document.deletedAt })
           .with({ status: DocumentStatus.COMPLETED }, () => (
             <p className="text-muted-foreground/60 mt-2.5 max-w-[60ch] text-center text-sm font-medium md:text-base">
-              Everyone has signed! You will receive an Email copy of the signed document.
+              כולם חתמו על המסמך! עותק של המסמך החתום יישלח אליך במייל.
             </p>
           ))
           .with({ deletedAt: null }, () => (
             <p className="text-muted-foreground/60 mt-2.5 max-w-[60ch] text-center text-sm font-medium md:text-base">
-              You will receive an Email copy of the signed document once everyone has signed.
+              כשכולם יחתמו על המסמך, יישלח אליך עותק של המסמך החתום.
             </p>
           ))
           .otherwise(() => (
@@ -149,7 +149,7 @@ export default async function CompletedSigningPage({
               href="https://documenso.com"
               className="text-documenso-700 hover:text-documenso-600"
             >
-              Check out Documenso.
+              Check out Tofes Mekovan.
             </Link>
           </p>
         )}

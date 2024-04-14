@@ -185,9 +185,10 @@ export const MenuSwitcher = ({ user, teams: initialTeamsData }: MenuSwitcherProp
               ))}
             </div>
           </>
-        ) : ''}
+        ) : (
+          ''
+        )}
 
- 
         {isUserAdmin && (
           <DropdownMenuItem className="text-muted-foreground px-4 py-2" asChild>
             <Link href="/admin">לוח ניהול</Link>

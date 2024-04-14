@@ -110,7 +110,7 @@ export const AddSubjectFormPartial = ({
           <div className="flex flex-col gap-y-4">
             <div>
               <Label htmlFor="subject">
-                Subject <span className="text-muted-foreground">(Optional)</span>
+                כותרת המייל שתישלח לחותם <span className="text-muted-foreground">(לא חובה)</span>
               </Label>
 
               <Input
@@ -125,7 +125,7 @@ export const AddSubjectFormPartial = ({
 
             <div>
               <Label htmlFor="message">
-                Message <span className="text-muted-foreground">(Optional)</span>
+                תוכן ההודעה שתישלח לחותם <span className="text-muted-foreground">(לא חובה)</span>
               </Label>
 
               <Textarea
@@ -143,7 +143,7 @@ export const AddSubjectFormPartial = ({
 
             <div>
               <p className="text-muted-foreground text-sm">
-                You can use the following variables in your message:
+              ניתן להשתמש במשתנים הבאים בהודעה שלך:
               </p>
 
               <ul className="mt-2 flex list-inside list-disc flex-col gap-y-2 text-sm">
@@ -151,19 +151,19 @@ export const AddSubjectFormPartial = ({
                   <code className="text-muted-foreground bg-muted-foreground/20 rounded p-1 text-sm">
                     {'{signer.name}'}
                   </code>{' '}
-                  - The signer's name
+                  - שם החותם
                 </li>
                 <li className="text-muted-foreground">
                   <code className="text-muted-foreground bg-muted-foreground/20 rounded p-1 text-sm">
                     {'{signer.email}'}
                   </code>{' '}
-                  - The signer's email
+                  - מייל החותם
                 </li>
                 <li className="text-muted-foreground">
                   <code className="text-muted-foreground bg-muted-foreground/20 rounded p-1 text-sm">
                     {'{document.name}'}
                   </code>{' '}
-                  - The document's name
+                  - שם המסמך
                 </li>
               </ul>
             </div>
@@ -171,7 +171,7 @@ export const AddSubjectFormPartial = ({
             <Accordion type="multiple" className="mt-8 border-none">
               <AccordionItem value="advanced-options" className="border-none">
                 <AccordionTrigger className="mb-2 border-b text-left hover:no-underline">
-                  Advanced Options
+                  אפשרויות מתקדמות
                 </AccordionTrigger>
 
                 <AccordionContent className="text-muted-foreground -mx-1 flex max-w-prose flex-col px-1 pt-2 text-sm leading-relaxed">
@@ -270,7 +270,7 @@ export const AddSubjectFormPartial = ({
         <DocumentFlowFormContainerActions
           loading={isSubmitting}
           disabled={isSubmitting}
-          goNextLabel={document.status === DocumentStatus.DRAFT ? 'Send' : 'Update'}
+          goNextLabel={document.status === DocumentStatus.DRAFT ? 'שליחה' : 'עדכון'}
           onGoBackClick={previousStep}
           onGoNextClick={() => void onFormSubmit()}
         />

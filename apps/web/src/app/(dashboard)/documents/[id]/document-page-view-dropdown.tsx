@@ -102,7 +102,7 @@ export const DocumentPageViewDropdown = ({ document, team }: DocumentPageViewDro
         {isComplete && (
           <DropdownMenuItem onClick={onDownloadClick}>
             <Download className="mr-2 h-4 w-4" />
-            Download
+            להורדה
           </DropdownMenuItem>
         )}
 

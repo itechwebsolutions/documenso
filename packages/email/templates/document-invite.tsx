@@ -26,16 +26,16 @@ export type DocumentInviteEmailTemplateProps = Partial<TemplateDocumentInvitePro
 
 export const DocumentInviteEmailTemplate = ({
   inviterName = 'Lucas Smith',
-  inviterEmail = 'lucas@documenso.com',
+  inviterEmail = 'isaac@tofes-mekovan.co.il',
   documentName = 'Open Source Pledge.pdf',
-  signDocumentLink = 'https://documenso.com',
+  signDocumentLink = 'https://sign.tofes-mekovan.co.il/',
   assetBaseUrl = 'http://localhost:3002',
   customBody,
   role,
 }: DocumentInviteEmailTemplateProps) => {
   const action = RECIPIENT_ROLES_DESCRIPTION[role].actionVerb.toLowerCase();
 
-  const previewText = `${inviterName} has invited you to ${action} ${documentName}`;
+  const previewText = `${inviterName} הזמין אותך ${action} ${documentName}`;
 
   const getAssetUrl = (path: string) => {
     return new URL(path, assetBaseUrl).toString();
@@ -60,7 +60,7 @@ export const DocumentInviteEmailTemplate = ({
               <Section>
                 <Img
                   src={getAssetUrl('/static/logo.png')}
-                  alt="Documenso Logo"
+                  alt="Logo"
                   className="mb-4 h-6"
                 />
 
@@ -88,7 +88,7 @@ export const DocumentInviteEmailTemplate = ({
                   {customBody ? (
                     <pre className="font-sans text-base text-slate-400">{customBody}</pre>
                   ) : (
-                    `${inviterName} has invited you to ${action} the document "${documentName}".`
+                    `${inviterName} הזמין אותך ${action} על המסמך "${documentName}".`
                   )}
                 </Text>
               </Section>

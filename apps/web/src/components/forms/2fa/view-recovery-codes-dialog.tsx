@@ -165,7 +165,7 @@ export const ViewRecoveryCodesDialog = ({ open, onOpenChange }: ViewRecoveryCode
                   loading={isViewRecoveryCodesDataLoading}
                   onClick={downloadRecoveryCodes}
                 >
-                  Download
+                  להורדה
                 </Button>
               </div>
             </div>

@@ -1,22 +1,22 @@
 >We are nominated for a Product Hunt Gold Kitty ðŸ˜ºâœ¨ and appreciate any support: https://documen.so/kitty
 
-<img src="https://github.com/documenso/documenso/assets/13398220/a643571f-0239-46a6-a73e-6bef38d1228b" alt="Documenso Logo">
+<img src="https://github.com/documenso/documenso/assets/13398220/a643571f-0239-46a6-a73e-6bef38d1228b" alt="Logo">
 
 <p align="center" style="margin-top: 20px">
   <p align="center">
   The Open Source DocuSign Alternative.
   <br>
-    <a href="https://documenso.com"><strong>Learn more Â»</strong></a>
+    <a href="https://documenso.com"><strong>Learn more ÿ»</strong></a>
     <br />
     <br />
     <a href="https://documen.so/discord">Discord</a>
-    Â·
+    ÿ·
     <a href="https://documenso.com">Website</a>
-    Â·
+    ÿ·
     <a href="https://github.com/documenso/documenso/issues">Issues</a>
-    Â·
+    ÿ·
     <a href="https://documen.so/live">Upcoming Releases</a>
-    Â·
+    ÿ·
     <a href="https://documen.so/roadmap">Roadmap</a>
   </p>
 </p>

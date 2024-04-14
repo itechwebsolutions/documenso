@@ -28,7 +28,7 @@ export const TemplateDocumentCompleted = ({
                 src={getAssetUrl('/static/completed.png')}
                 className="-mt-0.5 mr-2 inline h-7 w-7 align-middle"
               />
-              Completed
+              הושלם
             </Text>
           </Column>
         </Section>
@@ -38,7 +38,7 @@ export const TemplateDocumentCompleted = ({
         </Text>
 
         <Text className="my-1 text-center text-base text-slate-400">
-          Continue by downloading the document.
+         המשך להורדת המסמך.
         </Text>
 
         <Section className="mb-6 mt-8 text-center">
@@ -57,7 +57,7 @@ export const TemplateDocumentCompleted = ({
               src={getAssetUrl('/static/download.png')}
               className="mb-0.5 mr-2 inline h-5 w-5 align-middle"
             />
-            Download
+            להורדה
           </Button>
         </Section>
       </Section>

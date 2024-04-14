@@ -15,7 +15,7 @@ type SetupTwoFactorAuthenticationOptions = {
   password: string;
 };
 
-const ISSUER = 'Documenso';
+const ISSUER = 'Tofes Mekovan';
 
 export const setupTwoFactorAuthentication = async ({
   user,

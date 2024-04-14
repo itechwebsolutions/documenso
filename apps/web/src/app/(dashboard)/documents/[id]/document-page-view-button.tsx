@@ -103,7 +103,7 @@ export const DocumentPageViewButton = ({ document, team }: DocumentPageViewButto
     .with({ isComplete: true }, () => (
       <Button className="w-full" onClick={onDownloadClick}>
         <Download className="-ml-1 mr-2 inline h-4 w-4" />
-        Download
+        להורדה
       </Button>
     ))
     .otherwise(() => null);

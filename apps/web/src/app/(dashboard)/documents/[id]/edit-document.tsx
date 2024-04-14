@@ -78,13 +78,13 @@ export const EditDocumentForm = ({
       stepIndex: 2,
     },
     fields: {
-      title: 'Add Fields',
-      description: 'Add all relevant fields for each recipient.',
+      title: 'הוספת שדות',
+      description: 'הוסף את השדות הרלוונטיות לכל חותם בנפרד.',
       stepIndex: 3,
     },
     subject: {
-      title: 'Add Subject',
-      description: 'Add the subject and message you wish to send to signers.',
+      title: 'הגדרת כותרת המייל',
+      description: 'הוסף את הכותרת ואת תוכן המייל שישלח לכל חותם.',
       stepIndex: 4,
     },
   };
@@ -187,8 +187,8 @@ export const EditDocumentForm = ({
       });
 
       toast({
-        title: 'Document sent',
-        description: 'Your document has been sent successfully.',
+        title: 'המסמך נשלח',
+        description: 'המסמך שלך נשלח בהצלחה לחתימה.',
         duration: 5000,
       });
 

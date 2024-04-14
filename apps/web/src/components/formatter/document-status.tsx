@@ -20,7 +20,7 @@ export const FRIENDLY_STATUS_MAP: Record<ExtendedDocumentStatus, FriendlyStatus>
     color: 'text-blue-600 dark:text-blue-300',
   },
   COMPLETED: {
-    label: 'נחתמו',
+    label: 'נחתם',
     icon: CheckCircle2,
     color: 'text-green-500 dark:text-green-300',
   },

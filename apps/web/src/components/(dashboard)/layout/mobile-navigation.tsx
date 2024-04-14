@@ -28,11 +28,11 @@ export const MobileNavigation = ({ isMenuOpen, onMenuOpenChange }: MobileNavigat
   const menuNavigationLinks = [
     {
       href: `${rootHref}/documents`,
-      text: 'מסמכים',
+      text: '������������',
     },
     {
       href: `${rootHref}/templates`,
-      text: 'תבניות',
+      text: '������������',
     },
     {
       href: '/settings/teams',
@@ -40,7 +40,7 @@ export const MobileNavigation = ({ isMenuOpen, onMenuOpenChange }: MobileNavigat
     },
     {
       href: '/settings/profile',
-      text: 'הגדרות',
+      text: '������������',
     },
   ];
 
@@ -48,13 +48,7 @@ export const MobileNavigation = ({ isMenuOpen, onMenuOpenChange }: MobileNavigat
     <Sheet open={isMenuOpen} onOpenChange={onMenuOpenChange}>
       <SheetContent className="flex w-full max-w-[400px] flex-col">
         <Link href="/" onClick={handleMenuItemClick}>
-          <Image
-            src={LogoImage}
-            alt="Documenso Logo"
-            className="dark:invert"
-            width={170}
-            height={25}
-          />
+          <Image src={LogoImage} alt="Logo" className="dark:invert" width={170} height={25} />
         </Link>
 
         <div className="mt-8 flex w-full flex-col items-start gap-y-4">
@@ -87,7 +81,7 @@ export const MobileNavigation = ({ isMenuOpen, onMenuOpenChange }: MobileNavigat
           </div>
 
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Documenso, Inc. All rights reserved.
+            �� {new Date().getFullYear()} Tofes Mekovan, Inc. All rights reserved.
           </p>
         </div>
       </SheetContent>

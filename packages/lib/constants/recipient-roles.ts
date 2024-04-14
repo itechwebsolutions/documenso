@@ -2,25 +2,25 @@ import { RecipientRole } from '@documenso/prisma/client';
 
 export const RECIPIENT_ROLES_DESCRIPTION = {
   [RecipientRole.APPROVER]: {
-    actionVerb: 'Approve',
+    actionVerb: 'לאישור',
     actioned: 'Approved',
     progressiveVerb: 'Approving',
     roleName: 'Approver',
   },
   [RecipientRole.CC]: {
-    actionVerb: 'CC',
+    actionVerb: 'שלח העתק',
     actioned: `CC'd`,
     progressiveVerb: 'CC',
     roleName: 'Cc',
   },
   [RecipientRole.SIGNER]: {
-    actionVerb: 'Sign',
+    actionVerb: 'לחתום',
     actioned: 'Signed',
-    progressiveVerb: 'Signing',
+    progressiveVerb: 'לחתימה',
     roleName: 'Signer',
   },
   [RecipientRole.VIEWER]: {
-    actionVerb: 'View',
+    actionVerb: 'לצפיה',
     actioned: 'Viewed',
     progressiveVerb: 'Viewing',
     roleName: 'Viewer',

@@ -284,7 +284,7 @@ export const EnableAuthenticatorAppDialog = ({
                   disabled={!enableTwoFactorAuthenticationData?.recoveryCodes}
                   loading={isEnableTwoFactorAuthenticationDataLoading}
                 >
-                  Download
+                  להורדה
                 </Button>
               </div>
             </div>
