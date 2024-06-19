@@ -104,21 +104,21 @@ export const TemplatesDataTable = ({
       <DataTable
         columns={[
           {
-            header: 'Created',
+            header: 'תאריך יצירת התבנית',
             accessorKey: 'createdAt',
             cell: ({ row }) => <LocaleDate date={row.original.createdAt} />,
           },
           {
-            header: 'Title',
+            header: 'כותרת תבנית',
             cell: ({ row }) => <DataTableTitle row={row.original} />,
           },
           {
-            header: 'Type',
+            header: 'סוג מסמך',
             accessorKey: 'type',
             cell: ({ row }) => <TemplateType type={row.original.type} />,
           },
           {
-            header: 'Actions',
+            header: 'פעולות',
             accessorKey: 'actions',
             cell: ({ row }) => {
               const isRowLoading = loadingStates[row.original.id];
@@ -135,7 +135,7 @@ export const TemplatesDataTable = ({
                     }}
                   >
                     {!isRowLoading && <Plus className="-ml-1 mr-2 h-4 w-4" />}
-                    Use Template
+                    צור מסמך מהתבנית
                   </Button>
 
                   <DataTableActionDropdown

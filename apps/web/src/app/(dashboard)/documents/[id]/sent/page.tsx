@@ -10,9 +10,7 @@ export default function DocumentSentPage() {
         מסמכים
       </Link>
 
-      <h1 className="mt-4 grow-0 truncate text-2xl font-semibold md:text-3xl">
-        Loading Document...
-      </h1>
+      <h1 className="mt-4 grow-0 truncate text-2xl font-semibold md:text-3xl">טוען מסמך ...</h1>
     </div>
   );
 }

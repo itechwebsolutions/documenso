@@ -1,4 +1,4 @@
-import fontkit from '@pdf-lib/fontkit';
+﻿import fontkit from '@pdf-lib/fontkit';
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib';
 
 import { CAVEAT_FONT_PATH } from '../../constants/pdf';

@@ -148,7 +148,7 @@ export const NewTemplateDialog = ({ teamId, templateRootPath }: NewTemplateDialo
       <DialogTrigger asChild>
         <Button className="cursor-pointer" disabled={!session?.user.emailVerified}>
           <FilePlus className="-ml-1 mr-2 h-4 w-4" />
-          New Template
+          צור תבנית חדשה
         </Button>
       </DialogTrigger>
 

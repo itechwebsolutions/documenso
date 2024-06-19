@@ -50,12 +50,12 @@ export const EditTemplateForm = ({
 
   const documentFlow: Record<EditTemplateStep, DocumentFlowStep> = {
     signers: {
-      title: 'Add Placeholders',
-      description: 'Add all relevant placeholders for each recipient.',
+      title: 'הוספת מיקומים לחתימות',
+      description: 'הוסף מיקומי חתימות לכל נמען.',
       stepIndex: 1,
     },
     fields: {
-      title: 'Add Fields',
+      title: 'הוספת שדה',
       description: 'Add all relevant fields for each recipient.',
       stepIndex: 2,
     },

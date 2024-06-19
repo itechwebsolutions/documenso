@@ -2,8 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 
-import { env } from 'next-runtime-env';
-
 import { IS_GOOGLE_SSO_ENABLED } from '@documenso/lib/constants/auth';
 import { decryptSecondaryData } from '@documenso/lib/server-only/crypto/decrypt';
 
@@ -20,8 +18,6 @@ type SignInPageProps = {
 };
 
 export default function SignInPage({ searchParams }: SignInPageProps) {
-  const NEXT_PUBLIC_DISABLE_SIGNUP = env('NEXT_PUBLIC_DISABLE_SIGNUP');
-
   const rawEmail = typeof searchParams.email === 'string' ? searchParams.email : undefined;
   const email = rawEmail ? decryptSecondaryData(rawEmail) : null;
 
@@ -42,15 +38,6 @@ export default function SignInPage({ searchParams }: SignInPageProps) {
         initialEmail={email || undefined}
         isGoogleSSOEnabled={IS_GOOGLE_SSO_ENABLED}
       />
-
-      {NEXT_PUBLIC_DISABLE_SIGNUP !== 'true' && (
-        <p className="text-muted-foreground mt-6 text-center text-sm">
-          Don't have an account?{' '}
-          <Link href="/signup" className="text-primary duration-200 hover:opacity-70">
-            Sign up
-          </Link>
-        </p>
-      )}
 
       <p className="mt-2.5 text-center">
         <Link

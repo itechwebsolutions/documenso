@@ -32,24 +32,9 @@ export const DesktopNav = ({ className, ...props }: DesktopNavProps) => {
           )}
         >
           <User className="mr-2 h-5 w-5" />
-          Profile
+          פרופיל משתמש
         </Button>
       </Link>
-
-      {isTeamsEnabled && (
-        <Link href="/settings/teams">
-          <Button
-            variant="ghost"
-            className={cn(
-              'w-full justify-start',
-              pathname?.startsWith('/settings/teams') && 'bg-secondary',
-            )}
-          >
-            <Users className="mr-2 h-5 w-5" />
-            Teams
-          </Button>
-        </Link>
-      )}
 
       <Link href="/settings/security">
         <Button
@@ -60,24 +45,9 @@ export const DesktopNav = ({ className, ...props }: DesktopNavProps) => {
           )}
         >
           <Lock className="mr-2 h-5 w-5" />
-          Security
+          אבטחה
         </Button>
       </Link>
-
-      {isBillingEnabled && (
-        <Link href="/settings/billing">
-          <Button
-            variant="ghost"
-            className={cn(
-              'w-full justify-start',
-              pathname?.startsWith('/settings/billing') && 'bg-secondary',
-            )}
-          >
-            <CreditCard className="mr-2 h-5 w-5" />
-            Billing
-          </Button>
-        </Link>
-      )}
     </div>
   );
 };

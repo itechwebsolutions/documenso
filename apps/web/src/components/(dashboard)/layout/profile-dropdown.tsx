@@ -87,25 +87,16 @@ export const ProfileDropdown = ({ user }: ProfileDropdownProps) => {
         <DropdownMenuItem asChild>
           <Link href="/settings/profile" className="cursor-pointer">
             <LucideUser className="mr-2 h-4 w-4" />
-            Profile
+            פרופיל משתמש
           </Link>
         </DropdownMenuItem>
 
         <DropdownMenuItem asChild>
           <Link href="/settings/security" className="cursor-pointer">
             <Lock className="mr-2 h-4 w-4" />
-            Security
+            אבטחה
           </Link>
         </DropdownMenuItem>
-
-        {isBillingEnabled && (
-          <DropdownMenuItem asChild>
-            <Link href="/settings/billing" className="cursor-pointer">
-              <CreditCard className="mr-2 h-4 w-4" />
-              Billing
-            </Link>
-          </DropdownMenuItem>
-        )}
 
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>

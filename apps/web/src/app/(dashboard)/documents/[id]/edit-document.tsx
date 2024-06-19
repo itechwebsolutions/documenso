@@ -74,7 +74,7 @@ export const EditDocumentForm = ({
     },
     signers: {
       title: 'הוספת חותמים',
-      description: 'Add the people who will sign the document.',
+      description: 'הוסף את האנשים שיחתמו על המסמך.',
       stepIndex: 2,
     },
     fields: {

@@ -120,8 +120,6 @@ export default async function CompletedSigningPage({
           ))}
 
         <div className="mt-8 flex w-full max-w-sm items-center justify-center gap-4">
-          <DocumentShareButton documentId={document.id} token={recipient.token} />
-
           {document.status === DocumentStatus.COMPLETED ? (
             <DocumentDownloadButton
               className="flex-1"
@@ -137,22 +135,6 @@ export default async function CompletedSigningPage({
             />
           )}
         </div>
-
-        {isLoggedIn ? (
-          <Link href="/documents" className="text-documenso-700 hover:text-documenso-600 mt-36">
-            Go Back Home
-          </Link>
-        ) : (
-          <p className="text-muted-foreground/60 mt-36 text-sm">
-            Want to send slick signing links like this one?{' '}
-            <Link
-              href="https://documenso.com"
-              className="text-documenso-700 hover:text-documenso-600"
-            >
-              Check out Tofes Mekovan.
-            </Link>
-          </p>
-        )}
       </div>
     </div>
   );

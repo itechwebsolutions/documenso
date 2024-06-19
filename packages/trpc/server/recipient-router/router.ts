@@ -1,4 +1,4 @@
-import { TRPCError } from '@trpc/server';
+﻿import { TRPCError } from '@trpc/server';
 
 import { completeDocumentWithToken } from '@documenso/lib/server-only/document/complete-document-with-token';
 import { setRecipientsForDocument } from '@documenso/lib/server-only/recipient/set-recipients-for-document';

@@ -99,7 +99,7 @@ export const PasswordForm = ({ className }: PasswordFormProps) => {
             name="currentPassword"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Current Password</FormLabel>
+                <FormLabel>סיסמא נוכחית</FormLabel>
                 <FormControl>
                   <PasswordInput autoComplete="current-password" {...field} />
                 </FormControl>
@@ -113,7 +113,7 @@ export const PasswordForm = ({ className }: PasswordFormProps) => {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Password</FormLabel>
+                <FormLabel>סיסמא</FormLabel>
                 <FormControl>
                   <PasswordInput autoComplete="new-password" {...field} />
                 </FormControl>
@@ -127,7 +127,7 @@ export const PasswordForm = ({ className }: PasswordFormProps) => {
             name="repeatedPassword"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Repeat Password</FormLabel>
+                <FormLabel>אימות סיסמא פעם נוספת</FormLabel>
                 <FormControl>
                   <PasswordInput autoComplete="new-password" {...field} />
                 </FormControl>
@@ -139,7 +139,7 @@ export const PasswordForm = ({ className }: PasswordFormProps) => {
 
         <div className="ml-auto mt-4">
           <Button type="submit" loading={isSubmitting}>
-            {isSubmitting ? 'Updating password...' : 'Update password'}
+            {isSubmitting ? 'מעדכן ...' : 'עדכון סיסמא'}
           </Button>
         </div>
       </form>

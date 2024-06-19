@@ -44,7 +44,7 @@ export function DataTablePagination<TData>({
       </div>
 
       <div className="flex items-center gap-x-2">
-        <p className="whitespace-nowrap text-sm font-medium">Rows per page</p>
+        <p className="whitespace-nowrap text-sm font-medium">מספר שורות לפי עמוד</p>
         <Select
           value={`${table.getState().pagination.pageSize}`}
           onValueChange={(value) => {

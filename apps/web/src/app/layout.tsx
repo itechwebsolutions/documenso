@@ -25,20 +25,20 @@ const fontCaveat = Caveat({ subsets: ['latin'], variable: '--font-signature' });
 export function generateMetadata() {
   return {
     title: {
-      template: '%s - Tofes Mekovan',
-      default: 'Tofes Mekovan',
+      template: 'TM – www.Tofes-Mekovan.co.il',
+      default: 'TM – www.Tofes-Mekovan.co.il',
     },
     description:
-      'Join Documenso, the open signing infrastructure, and get a 10x better signing experience. Pricing starts at $30/mo. forever! Sign in now and enjoy a faster, smarter, and more beautiful document signing process. Integrates with your favorite tools, customizable, and expandable. Support our mission and become a part of our open-source community.',
+      'מערכת שליחת טפסים להחתמה דיגיטלית המובילה בישראל. גם אתם רוצים לשלוח טופס לחתימה בקלות, חייגו ל- 052-5518255 המרת כל טופס word ו - PDF לטופס מקוון , שליחת מסמכים וטפסים מקוונים לחתימה דיגיטלית באון ליין.',
     keywords:
-      'Documenso, open source, DocuSign alternative, document signing, open signing infrastructure, open-source community, fast signing, beautiful signing, smart templates',
+      'ט,T,ADOBEטופס,מקוון,קומ,form,DOCU, iforms,v DOC,COMSIGN,PDF,חתימה,דיגיטלית,TM,SIGN,word,2SIGN,חתימה ירוקה,טופס דיגיטלי, Online,טופס מקוון,מסמך,file,document',
     authors: { name: 'Tofes Mekovan, Inc.' },
     robots: 'index, follow',
     metadataBase: new URL(NEXT_PUBLIC_WEBAPP_URL() ?? 'http://localhost:3000'),
     openGraph: {
-      title: 'Documenso - The Open Source DocuSign Alternative',
+      title: 'TM – www.Tofes-Mekovan.co.il',
       description:
-        'Join Documenso, the open signing infrastructure, and get a 10x better signing experience. Pricing starts at $30/mo. forever! Sign in now and enjoy a faster, smarter, and more beautiful document signing process. Integrates with your favorite tools, customizable, and expandable. Support our mission and become a part of our open-source community.',
+        'מערכת שליחת טפסים להחתמה דיגיטלית המובילה בישראל. גם אתם רוצים לשלוח טופס לחתימה בקלות, חייגו ל- 052-5518255 המרת כל טופס word ו - PDF לטופס מקוון , שליחת מסמכים וטפסים מקוונים לחתימה דיגיטלית באון ליין.',
       type: 'website',
       images: ['/opengraph-image.jpg'],
     },
@@ -47,7 +47,7 @@ export function generateMetadata() {
       card: 'summary_large_image',
       images: ['/opengraph-image.jpg'],
       description:
-        'Join Documenso, the open signing infrastructure, and get a 10x better signing experience. Pricing starts at $30/mo. forever! Sign in now and enjoy a faster, smarter, and more beautiful document signing process. Integrates with your favorite tools, customizable, and expandable. Support our mission and become a part of our open-source community.',
+        'מערכת שליחת טפסים להחתמה דיגיטלית המובילה בישראל. גם אתם רוצים לשלוח טופס לחתימה בקלות, חייגו ל- 052-5518255 המרת כל טופס word ו - PDF לטופס מקוון , שליחת מסמכים וטפסים מקוונים לחתימה דיגיטלית באון ליין.',
     },
   };
 }

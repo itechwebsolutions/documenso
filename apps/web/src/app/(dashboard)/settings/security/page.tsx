@@ -7,12 +7,10 @@ import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/al
 import { Button } from '@documenso/ui/primitives/button';
 
 import { SettingsHeader } from '~/components/(dashboard)/settings/layout/header';
-import { AuthenticatorApp } from '~/components/forms/2fa/authenticator-app';
-import { RecoveryCodes } from '~/components/forms/2fa/recovery-codes';
 import { PasswordForm } from '~/components/forms/password';
 
 export const metadata: Metadata = {
-  title: 'Security',
+  title: 'אבטחה',
 };
 
 export default async function SecuritySettingsPage() {
@@ -21,8 +19,8 @@ export default async function SecuritySettingsPage() {
   return (
     <div>
       <SettingsHeader
-        title="Security"
-        subtitle="Here you can manage your password and security settings."
+        title="אבטחה"
+        subtitle="כאן תוכל לשלנות ולערוך את הסיסמא, והגדרות אבטחה נוספות לחשבון המשתמש שלך"
       />
 
       {user.identityProvider === 'DOCUMENSO' ? (
@@ -30,40 +28,6 @@ export default async function SecuritySettingsPage() {
           <PasswordForm user={user} />
 
           <hr className="border-border/50 mt-6" />
-
-          <Alert
-            className="mt-6 flex flex-col justify-between p-6 sm:flex-row sm:items-center"
-            variant="neutral"
-          >
-            <div className="mb-4 sm:mb-0">
-              <AlertTitle>Two factor authentication</AlertTitle>
-
-              <AlertDescription className="mr-4">
-                Create one-time passwords that serve as a secondary authentication method for
-                confirming your identity when requested during the sign-in process.
-              </AlertDescription>
-            </div>
-
-            <AuthenticatorApp isTwoFactorEnabled={user.twoFactorEnabled} />
-          </Alert>
-
-          {user.twoFactorEnabled && (
-            <Alert
-              className="mt-6 flex flex-col justify-between p-6 sm:flex-row sm:items-center"
-              variant="neutral"
-            >
-              <div className="mb-4 sm:mb-0">
-                <AlertTitle>Recovery codes</AlertTitle>
-
-                <AlertDescription className="mr-4">
-                  Two factor authentication recovery codes are used to access your account in the
-                  event that you lose access to your authenticator app.
-                </AlertDescription>
-              </div>
-
-              <RecoveryCodes isTwoFactorEnabled={user.twoFactorEnabled} />
-            </Alert>
-          )}
         </div>
       ) : (
         <Alert className="p-6" variant="neutral">
@@ -84,15 +48,15 @@ export default async function SecuritySettingsPage() {
         variant="neutral"
       >
         <div className="mb-4 mr-4 sm:mb-0">
-          <AlertTitle>Recent activity</AlertTitle>
+          <AlertTitle>פעילות אחרונה</AlertTitle>
 
           <AlertDescription className="mr-2">
-            View all recent security activity related to your account.
+            צפה בכל הפעילות האחרונה שהתבצעה בחשבונך.
           </AlertDescription>
         </div>
 
         <Button asChild>
-          <Link href="/settings/security/activity">View activity</Link>
+          <Link href="/settings/security/activity">צפה</Link>
         </Button>
       </Alert>
     </div>

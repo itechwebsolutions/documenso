@@ -25,7 +25,7 @@ export const AuthenticatorApp = ({ isTwoFactorEnabled }: AuthenticatorAppProps) 
             Disable 2FA
           </Button>
         ) : (
-          <Button onClick={() => setModalState('enable')}>Enable 2FA</Button>
+          <Button onClick={() => setModalState('enable')}>הפעל אימות דו-שלבי</Button>
         )}
       </div>
 

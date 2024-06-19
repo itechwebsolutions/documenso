@@ -252,7 +252,7 @@ export const SignaturePad = ({
           className="focus-visible:ring-ring ring-offset-background text-muted-foreground/60 hover:text-muted-foreground rounded-full p-0 text-xs focus-visible:outline-none focus-visible:ring-2"
           onClick={() => onClearClick()}
         >
-          Clear Signature
+          איפוס חתימה
         </button>
       </div>
 

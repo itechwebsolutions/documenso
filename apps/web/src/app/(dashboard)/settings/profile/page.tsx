@@ -6,7 +6,7 @@ import { SettingsHeader } from '~/components/(dashboard)/settings/layout/header'
 import { ProfileForm } from '~/components/forms/profile';
 
 export const metadata: Metadata = {
-  title: 'Profile',
+  title: 'פרופיל משתמש',
 };
 
 export default async function ProfileSettingsPage() {
@@ -14,7 +14,7 @@ export default async function ProfileSettingsPage() {
 
   return (
     <div>
-      <SettingsHeader title="Profile" subtitle="Here you can edit your personal details." />
+      <SettingsHeader title="פרופיל משתמש" subtitle="כאן תוכל לערוך את הפרטים האישיים שלך" />
 
       <ProfileForm user={user} className="max-w-xl" />
     </div>

@@ -20,12 +20,6 @@ type SignUpPageProps = {
 };
 
 export default function SignUpPage({ searchParams }: SignUpPageProps) {
-  const NEXT_PUBLIC_DISABLE_SIGNUP = env('NEXT_PUBLIC_DISABLE_SIGNUP');
-
-  if (NEXT_PUBLIC_DISABLE_SIGNUP === 'true') {
-    redirect('/signin');
-  }
-
   const rawEmail = typeof searchParams.email === 'string' ? searchParams.email : undefined;
   const email = rawEmail ? decryptSecondaryData(rawEmail) : null;
 

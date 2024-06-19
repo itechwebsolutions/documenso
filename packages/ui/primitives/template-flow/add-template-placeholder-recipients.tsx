@@ -63,8 +63,8 @@ export const AddTemplatePlaceholderRecipientsFormPartial = ({
           : [
               {
                 formId: initialId,
-                name: `Recipient 1`,
-                email: `recipient.1@documenso.com`,
+                name: `חותם ראשון`,
+                email: ``,
               },
             ],
     },
@@ -84,8 +84,8 @@ export const AddTemplatePlaceholderRecipientsFormPartial = ({
   const onAddPlaceholderRecipient = () => {
     appendSigner({
       formId: nanoid(12),
-      name: `Recipient ${placeholderRecipientCount}`,
-      email: `recipient.${placeholderRecipientCount}@documenso.com`,
+      name: `חותם מספר ${placeholderRecipientCount}`,
+      email: ``,
     });
 
     setPlaceholderRecipientCount((count) => count + 1);
@@ -168,7 +168,7 @@ export const AddTemplatePlaceholderRecipientsFormPartial = ({
         <div className="mt-4">
           <Button type="button" disabled={isSubmitting} onClick={() => onAddPlaceholderRecipient()}>
             <Plus className="-ml-1 mr-2 h-5 w-5" />
-            Add Placeholder Recipient
+            הוספת נמען נוסף
           </Button>
         </div>
       </DocumentFlowFormContainerContent>

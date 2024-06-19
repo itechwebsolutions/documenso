@@ -119,7 +119,7 @@ export const NameField = ({ field, recipient }: NameFieldProps) => {
           </DialogTitle>
 
           <div>
-            <Label htmlFor="signature">Full Name</Label>
+            <Label htmlFor="signature">שם מלא</Label>
 
             <Input
               type="text"
